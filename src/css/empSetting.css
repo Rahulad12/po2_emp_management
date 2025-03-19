@@ -1,0 +1,154 @@
+/* General styling for the setting container */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#emp-setting-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+}
+#side-bar {
+  background-color: #1c1818;
+  width: 200px;
+  color: #fff;
+  padding-top: 20px;
+}
+
+#side-bar a {
+  display: block;
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 10px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#side-bar a:hover {
+  background-color: #007bff;
+}
+
+/* Content Section */
+#content {
+  flex: 1;
+  /* border: 2px solid red; */
+  padding: 30px;
+}
+
+/* Container for the setting cards */
+.setting-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Sidebar Section */
+
+/* Styling for each card (Change Password and Change Email) */
+.change-password-card,
+.change-email-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card headings */
+.change-password-card h3,
+.change-email-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Form container styling */
+.password-container,
+.email-container {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.password-container label,
+.email-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Input field styling */
+.password-container input,
+.email-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.password-container input:focus,
+.email-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.change-password-btn,
+.change-email-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.change-password-btn:hover,
+.change-email-btn:hover {
+  background-color: #0056b3;
+}
+#logout {
+  background-color: #ff5c5c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .setting-container {
+    padding: 10px;
+  }
+
+  .change-password-card,
+  .change-email-card {
+    padding: 15px;
+  }
+
+  .change-password-card h3,
+  .change-email-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .password-container input,
+  .email-container input {
+    font-size: 0.9rem;
+  }
+
+  .change-password-btn,
+  .change-email-btn {
+    font-size: 0.9rem;
+  }
+}
