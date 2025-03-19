@@ -1,13 +1,10 @@
-import {
-  registerUser,
-  loginUser,
-} from "../../../Backend/controllers/authControllers.js";
+import { registerUser, loginUser } from "../controllers/authControllers.js";
 
 import {
   getUsersById,
   changePassword,
   updateEmail,
-} from "../../../Backend/controllers/userControllers.js";
+} from "../controllers/userControllers.js";
 import { AUTH_URL } from "../constant.js";
 export const registerUserApi = async (email, password) => {
   return await registerUser(AUTH_URL, email, password); // Call the regiserUser function as a promise
