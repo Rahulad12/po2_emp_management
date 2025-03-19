@@ -17,12 +17,11 @@ The **Employee Management System** is a web application built with **Vite** for 
 
 1. **Clone The Repository**
    ```sh
-   git clone https://github.com/Rahulad12/amnilInternshipAssignment.git
+   git clone https://github.com/Rahulad12/po2_emp_managment.git
    ```
 2. Change the Directory
    ```sh
-   cd project
-   cd employee_management
+   cd po2_emp_managment
    ```
 3. **Install Dependencies**
    ```sh
@@ -30,15 +29,13 @@ The **Employee Management System** is a web application built with **Vite** for 
    ```
 4. **Start Backend and Frontend**
    ```sh
-   npm run start
+   npm run dev
    ```
    - Vite will run the frontend on `http://localhost:5173/`
-   - JSON Server will run the mock API on `http://localhost:5000/`
 
 ## 🛠 Technologies Used
 
 - **Frontend:** Vite, HTML, CSS, JavaScript
-- **Backend:** JSON Server, Node.js
 
 # Developer
 
