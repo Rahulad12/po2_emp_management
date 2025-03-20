@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <script type="module" crossorigin src="/po2_emp_management/assets/login-CW04vEUI.js"></script>
+    <link rel="modulepreload" crossorigin href="/po2_emp_management/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/po2_emp_management/assets/constant-DWVoamgU.js">
+    <link rel="modulepreload" crossorigin href="/po2_emp_management/assets/errorHelper-Cs5CMN5R.js">
+    <link rel="stylesheet" crossorigin href="/po2_emp_management/assets/userLogin-DR8nUNCE.css">
+  </head>
+  <body>
+    <div id="auth-container">
+      <div class="hero align-center">
+        <h1>Login Screen</h1>
+      </div>
+      <div id="form-container">
+        <form id="form">
+          <div class="email-container">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email" />
+          </div>
+          <span id="email-error-message"></span>
+          <div class="password-container">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <span id="password-error-message"></span>
+          <div class="button-container">
+            <button type="submit" id="submit-button" class="login-button btn">
+              Login
+            </button>
+          </div>
+          <span id="error-message"></span>
+          <p class="form-text-end align-center">
+            Donot have account?
+            <span>
+              <a href="./userRegister.html"> Register</a>
+            </span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
