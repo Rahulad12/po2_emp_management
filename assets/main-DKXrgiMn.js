@@ -1,9 +1,4 @@
-import "./style.css";
-
-if (localStorage.getItem("token"))
-  window.location.href = "./src/screen/employeeDashboard.html";
-
-document.getElementById("app").innerHTML = `
+import"./modulepreload-polyfill-B5Qt9EMX.js";localStorage.getItem("token")&&(window.location.href="./src/screen/employeeDashboard.html");document.getElementById("app").innerHTML=`
      <div class="container">
       <h1>Welcome to Employee Management System</h1>
       <p>
