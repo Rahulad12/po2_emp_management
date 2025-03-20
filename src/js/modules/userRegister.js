@@ -1,13 +1,16 @@
 import { registerUserApi } from "../api/userApi.js";
 import { errorMessage } from "../utils/errorHelper.js";
 import { authformHelper, resetForm, isLoggedIn } from "../utils/helper.js";
-
+import { manageBaseUrl } from "../utils/manageBaseUrl.js";
 import { checkEmailPassword } from "../utils/validator.js";
 
 // Redirect if already logged in
 if (isLoggedIn()) {
-  window.location.href = "../screen/employeeDashboard.html";
+  window.location.href = `${
+    import.meta.env.BASE_URL
+  }/src/screen/employeeDashboard.html`;
 }
+manageBaseUrl();
 
 export const userRegister = () => {
   const { authForm, emailInput, passwordInput, submitButton } =
@@ -38,10 +41,9 @@ export const userRegister = () => {
           success: true,
           message: response?.message?.message || "Registration successful",
         });
-        // Redirect to dashboard
-        setTimeout(() => {
-          window.location.href = "/src/screen/employeeDashboard.html";
-        }, 1000);
+        window.location.href = `${
+          import.meta.env.BASE_URL
+        }/src/screen/userLogin.html`;
       } else {
         errorMessage({
           success: false,

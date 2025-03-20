@@ -11,11 +11,14 @@ import {
   changeEmailHelper,
   resetForm,
 } from "../utils/helper.js";
+import { manageBaseUrl } from "../utils/manageBaseUrl.js";
 
 import {
   passwordChangeValidator,
   handleEmailChangeValidator,
 } from "../utils/validator.js";
+
+manageBaseUrl();
 const userID = localStorage.getItem("token"); //getting id from localStorage
 
 export const settingDashboard = async () => {

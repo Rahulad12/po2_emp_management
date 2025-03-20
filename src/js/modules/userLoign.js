@@ -6,9 +6,12 @@ import {
   emailErrorMessage,
 } from "../utils/errorHelper.js";
 
+import { manageBaseUrl } from "../utils/manageBaseUrl.js";
+manageBaseUrl();
+
 // Redirect logged-in user to dashboard
 if (isLoggedIn()) {
-  window.location.href = "../screen/employeeDashboard.html";
+  window.location.href = `${import.meta.env.BASE_URL}/src/screen/employeeDashboard.html`;
 }
 
 export const userLogin = () => {
@@ -55,7 +58,9 @@ export const userLogin = () => {
         });
         //Redirect to dashboard after a short delay of 1 second when login is successful
         setTimeout(() => {
-          window.location.href = "/src/screen/employeeDashboard.html";
+          window.location.href = `${
+            import.meta.env.BASE_URL
+          }src/screen/employeeDashboard.html`;
         }, 1000);
       } else {
         errorMessage({

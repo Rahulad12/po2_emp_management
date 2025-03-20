@@ -1,5 +1,5 @@
 import { outlet } from "./Outlet.js";
-  
+
 /**
  * @function protectedRoute
  * @description A function that checks if a user is logged in and, if so, renders a component. If the user is not logged in, it redirects the user to the login page.
@@ -13,6 +13,8 @@ export const protectedRoute = (component) => {
   if (isLoggedIn) {
     outlet(component);
   } else {
-    window.location.href = "../screen/userLogin.html";
+    window.location.href = `${
+      import.meta.env.BASE_URL
+    }src/screen/userLogin.html`;
   }
 };
